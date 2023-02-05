@@ -8,5 +8,7 @@
     </select>
 
     {{ implode(', ', $greetings) }} {{ $name }} @if($loud) ! @endif
+
+    <button wire:click="resetName">Reset Me</button>
 </div>
 
