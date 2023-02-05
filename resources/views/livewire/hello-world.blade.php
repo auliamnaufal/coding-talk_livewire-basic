@@ -1,3 +1,6 @@
 <div>
-    {{-- Stop trying to control. --}}
+    <input type="text" wire:model="name">
+
+    Hello {{ $name }}
 </div>
+
