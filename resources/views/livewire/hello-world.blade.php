@@ -9,6 +9,8 @@
 
     {{ implode(', ', $greetings) }} {{ $name }} @if($loud) ! @endif
 
-    <button wire:click="resetName('Bingo')">Reset Me</button>
+    <form action="#" wire:submit.prevent="resetName('Bingo')">
+        <button>Reset Me</button>
+    </form>
 </div>
 
