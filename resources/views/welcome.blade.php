@@ -11,6 +11,8 @@
 <body>
     @livewire('hello-world')
 
+    <livewire:register-user-form />
+
     @livewireScripts
 </body>
 </html>
