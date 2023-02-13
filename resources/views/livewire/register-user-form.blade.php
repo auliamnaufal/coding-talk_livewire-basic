@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit.prevent="registerUser">
+    <form wire:submit.prevent="registerUser" >
         
         <input type="text" wire:model="name" placeholder="Insert Name here...">
         @error('name') <span class="error">{{ $message }}</span> @enderror
@@ -12,4 +12,7 @@
      
         <button type="submit">Save Contact</button>
     </form>
+
+    <livewire:show-users />
+
 </div>

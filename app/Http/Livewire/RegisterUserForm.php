@@ -28,6 +28,8 @@ class RegisterUserForm extends Component
  
         User::create($validatedData);
 
+        $this->emit('userCreated');
+
         $this->name = '';
         $this->email = '';
         $this->password = '';
