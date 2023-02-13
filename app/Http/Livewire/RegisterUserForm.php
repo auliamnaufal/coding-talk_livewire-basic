@@ -7,10 +7,12 @@ use Livewire\Component;
 
 class RegisterUserForm extends Component
 {
+    public $name;
     public $email;
     public $password;
  
     protected $rules = [
+        'name' => 'required|min:3|max:50',
         'email' => 'required|email',
         'password' => 'required|min:6',
     ];
@@ -20,7 +22,7 @@ class RegisterUserForm extends Component
         $this->validateOnly($propertyName);
     }
  
-    public function saveContact()
+    public function registerUser()
     {
         $validatedData = $this->validate();
  
