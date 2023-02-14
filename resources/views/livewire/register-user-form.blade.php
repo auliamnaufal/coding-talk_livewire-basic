@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit.prevent="registerUser" >
+    <form wire:submit.prevent="registerUser" class="user-input">
         
         <input type="text" wire:model="name" placeholder="Insert Name here...">
         @error('name') <span class="error">{{ $message }}</span> @enderror

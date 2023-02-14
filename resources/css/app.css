@@ -1,3 +1,21 @@
 body {
-	background-color: rebeccapurple;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.user-input {
+	padding: 40px;
+	margin-top: 20px;
+}
+
+.user-input input[type=text] {
+	display: block;
+	margin-bottom: 12px;
+
+}
+
+.user-input input[type=text] + span {
+	color: red;
+
 }
